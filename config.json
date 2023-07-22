@@ -1,0 +1,15 @@
+{
+  "name_cn": "转发",
+  "name_en": "reforward",
+  "description": "帖子类型里添加转发插件",
+  "type": 1,
+  "app_id": "900002",
+  "version": "1.0.0",
+  "status": 1,
+  "filter_enable": true,
+  "author": {
+    "name": "varieget",
+    "email": "varieget@gmail.com"
+  },
+  "busi": "Plugin\\Reforward\\ReforwardBusi"
+}
