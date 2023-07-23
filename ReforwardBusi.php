@@ -24,6 +24,11 @@ class ReforwardBusi extends TomBaseBusi
 
     public function select()
     {
+        if (!isset($this->body['_plugin'])) {
+            $plugin = ['name' => 'reforward'];
+            $this->body['_plugin'] = $plugin;
+        }
+
         $result = [];
         $threadIds = $this->getParams('threadIds');
         if (!empty($threadIds)) {
@@ -39,6 +44,7 @@ class ReforwardBusi extends TomBaseBusi
                 if (empty($post)) {
                     array_push($result, [
                         'threadId' => $threadId,
+                        'postId' => null,
                         'threadDetail' => null
                     ]);
                     break;
