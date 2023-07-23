@@ -11,5 +11,19 @@
     "name": "varieget",
     "email": "varieget@gmail.com"
   },
-  "busi": "Plugin\\Reforward\\ReforwardBusi"
+  "busi": "Plugin\\Reforward\\ReforwardBusi",
+  "view": {
+    "ReforwardDisplay": {
+      "target": ["plugin_index", "plugin_detail"],
+      "hookName": "thread_extension_display_hook",
+      "platform": ["pc", "h5"],
+      "disables": false
+    },
+    "ReforwardPost": {
+      "target": "plugin_post",
+      "hookName": "post_extension_content_hook",
+      "platform": ["pc", "h5"],
+      "disables": false
+    }
+  }
 }

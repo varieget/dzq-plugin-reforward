@@ -1,0 +1,40 @@
+@import '@discuzq/theme/src';
+
+.wrapper {
+  margin-bottom: $margin-10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $body-bg-color;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  &-item {
+    padding: $padding-4n;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    &_left {
+      margin-right: $margin-4n;
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: $border-radius-small;
+    }
+    &_right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        line-height: $font-line-height-base;
+        font-size: $font-size-base;
+        color: $text-color-regular;
+        @include lamp-clamp(1);
+      }
+      p {
+        margin-top: $margin-2n;
+        @include lamp-clamp(2);
+      }
+    }
+  }
+}

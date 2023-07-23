@@ -1,0 +1,23 @@
+{
+  "name": "reforward-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "dzq plugin -w",
+    "server": "dzq plugin -s",
+    "build": "dzq plugin",
+    "publish": "dzq plugin -p",
+    "update": "dzq update"
+  },
+  "author": "varieget",
+  "license": "MIT",
+  "dependencies": {
+    "@discuzq/cli": "^1.2.32",
+    "@discuzq/theme": "^1.0.32",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-html-parser": "^2.0.2",
+    "sass": "^1.64.1"
+  }
+}
